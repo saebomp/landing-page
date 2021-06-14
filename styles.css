@@ -9,21 +9,24 @@ section {
   width: 100%;
   min-height: 100vh;
   padding: 0 50px;
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
   background: #fff;
   margin: 0 auto;
 }
 header {
-  position: absolute;
+  /* position: absolute;
   top:0;
-  left:0;
+  left:0; */
+  position: relative;
   width: 100%;
-  padding:20px 50px;
+  padding:20px 50px 20px 0;
   display: flex;
   justify-content: space-between;
   align-items:center;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 header .logo {
   position: relative;
@@ -48,6 +51,9 @@ header ul li a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1280px;
+  margin:0 auto;
+  height:calc(100vh - 109px);
 }
 .content .textBox {
   position: relative;
@@ -97,12 +103,37 @@ header ul li a {
 .thumb li img {
   max-width: 60px;
 }
+.textBox a {
+  padding:15px 25px;
+  text-align: center;
+  color:#fff;
+  margin-top:20px;
+  display: inline-block;
+  background:#017143;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 40px;
+}
 .circle {
   position: absolute;
   top:0;
   left:0;
   width: 100%;
   height: 100%;
-  background-color: #acad12;
-  clip-path:circle(660px at right 900px);
+  background: #017143;
+  clip-path:circle(50% at right 97%);
+  transition: 0.1s;
+}
+
+
+@media only screen and (min-width: 1920px) {
+  header {
+    max-width:1920px
+  }
+  .circle {
+    clip-path: circle(1300px at right 1500px);
+  }
+  .content {
+    max-width:1920px
+  }
 }

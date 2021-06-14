@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles.css" />
-  <script src="./script.js"></script>
+  <script src="./script.js" defer></script>
   <title>Landing Page</title>
 </head>
 <body>
@@ -28,19 +28,22 @@
         <a href="#">Learn More</a>
       </div>
       <div class="imgBox">
-        <img src="images/image3.png" class="starbucks" alt="Mango Dragonfruit">
+        <img src="images/image1.png" class="starbucks" alt="Mango Dragonfruit">
       </div>
     </div>
     <ul class="thumb">
-      <li><img src="images/image1.png" alt="Mango Dragonfruit"></li>
-      <li><img src="images/image2.png" alt="Strawberry Açaí"></li>
-      <li><img src="images/image3.png" alt="Kiwi Starfruit"></li>
+      <li><img src="images/image1.png" alt="Mango Dragonfruit" onmouseover="imgSlider('images/image1.png');changeCircleColor('#017143')"></li>
+      <li><img src="images/image2.png" alt="Strawberry Açaí" onmouseover="imgSlider('images/image2.png');changeCircleColor('#eb7495')"></li>
+      <li><img src="images/image3.png" alt="Kiwi Starfruit" onmouseover="imgSlider('images/image3.png');changeCircleColor('#d752b1')"></li>
     </ul>
   </section>
   </div>
+<script>
+  
+</script>
 </body>
 </html>
 
 
 <!-- https://www.youtube.com/watch?v=91Q6RvKvd7o -->  
-<!-- 11:35 -->
+<!-- https://fossheim.io/writing/posts/css-text-gradient/ -->
