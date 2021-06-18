@@ -1,20 +1,17 @@
 /****************************************/
 /******************mixin*****************/
 /****************************************/
-
-@mixin display-flex {
+@mixin flex {
   display: flex;
   justify-content: space-between;
   align-items:center;
+}
+@mixin display-flex {
+  @include flex;
   max-width: 1280px;
   margin: 0 auto;
   position: relative;
   width: 100%;
-}
-@mixin media_layout {
-  @media only screen and (min-width: $breakpoint-widescreen) {
-  max-width: 1920px;
-  }
 }
 @mixin media_circle {
   @media only screen and (min-width: $breakpoint-widescreen) {
@@ -31,6 +28,7 @@
 /*****************variable***************/
 /****************************************/
 $breakpoint-widescreen: 1920px;
+$breakpoint-desktop: 1280px;
 $breakpoint-tablet: 780px;
 $main-color:#017143;
 
@@ -54,10 +52,6 @@ section {
   background: #fff;
 }
 header {
-  @include media_layout;
-  // display: flex;
-  // justify-content: space-between;
-  // align-items:center;
   position: fixed;
   z-index: 999;
   background-color: #fff;
@@ -65,10 +59,10 @@ header {
   top:0;
   left:0;
   .header-wrapper {
+    @include flex;
     max-width: 1280px;
     margin:0 auto;
     padding:20px 50px 20px 0;
-    background-color:#eb7495;
     .logo {
       position: relative;
       }
@@ -94,7 +88,6 @@ header {
 
 .content {
   @include display-flex;
-  @include media_layout;
   height:calc(100vh - 109px);
   .imgBox {
     width: 600px;
@@ -213,4 +206,12 @@ header {
       h2 {
     font-size: 40px;
   }}}
+}
+
+@media only screen and (max-width: $breakpoint-desktop) {
+  header {
+    .header-wrapper {
+      padding:20px;
+    }
+  }
 }

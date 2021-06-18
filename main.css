@@ -34,16 +34,13 @@ header {
   top: 0;
   left: 0;
 }
-@media only screen and (min-width: 1920px) {
-  header {
-    max-width: 1920px;
-  }
-}
 header .header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-width: 1280px;
   margin: 0 auto;
   padding: 20px 50px 20px 0;
-  background-color: #eb7495;
 }
 header .header-wrapper .logo {
   position: relative;
@@ -73,11 +70,6 @@ header ul li a {
   position: relative;
   width: 100%;
   height: calc(100vh - 109px);
-}
-@media only screen and (min-width: 1920px) {
-  .content {
-    max-width: 1920px;
-  }
 }
 .content .imgBox {
   width: 600px;
@@ -186,6 +178,11 @@ header ul li a {
 
   .content .textBox h2 {
     font-size: 40px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  header .header-wrapper {
+    padding: 20px;
   }
 }
 
