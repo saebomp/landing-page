@@ -14,8 +14,15 @@
   font-family: "roboto", sans-serif;
 }
 
+body {
+  position: relative;
+  height: 100%;
+}
+
 html {
   scroll-behavior: smooth;
+  position: relative;
+  height: 100%;
 }
 
 section {
@@ -84,6 +91,7 @@ header ul li a {
   position: relative;
   max-width: 600px;
   padding-bottom: 50px;
+  text-align: left;
 }
 .content .textBox a {
   padding: 15px 25px;
@@ -165,11 +173,6 @@ header ul li a {
 /****************************************/
 /******************swiper****************/
 /****************************************/
-.section2 {
-  position: relative;
-  height: 100%;
-}
-
 .swiper-container {
   width: 100%;
   height: 100%;
@@ -192,13 +195,6 @@ header ul li a {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 @media only screen and (max-width: 780px) {

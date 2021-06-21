@@ -23,42 +23,35 @@
       </ul>
     </div>
   </header>
-  <section id="section1">
-    <div class="circle"></div>
-    
-    <div class="content">
-      <div class="textBox">
-        <h2>REFRESHINGLY RADIANT</h2>
-        <p>Explore thirst-quenching Starbucks Refreshers® beverages: Mango Dragonfruit, Strawberry Açaí and Kiwi Starfruit.</p>
-        <a href="#section2">Learn More</a>
+  <div class="circle"></div>
+  <div class="swiper-container mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <section id="section1">
+          <div class="content">
+            <div class="textBox">
+              <h2>REFRESHINGLY RADIANT</h2>
+              <p>Explore thirst-quenching Starbucks Refreshers® beverages: Mango Dragonfruit, Strawberry Açaí and Kiwi Starfruit.</p>
+              <a href="#section2">Learn More</a>
+            </div>
+            <div class="imgBox">
+              <img src="images/image1.png" class="starbucks" alt="Mango Dragonfruit">
+            </div>
+          </div>
+          <ul class="thumb">
+            <li><img src="images/image1.png" alt="Mango Dragonfruit" onmouseover="imgSlider('images/image1.png');changeCircleColor('#017143')"></li>
+            <li><img src="images/image2.png" alt="Strawberry Açaí" onmouseover="imgSlider('images/image2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="images/image3.png" alt="Kiwi Starfruit" onmouseover="imgSlider('images/image3.png');changeCircleColor('#d752b1')"></li>
+          </ul>
+        </section>
       </div>
-      <div class="imgBox">
-        <img src="images/image1.png" class="starbucks" alt="Mango Dragonfruit">
+      <div class="swiper-slide">
+        <section id="section2" class="section2"> <div>section2</div> </section>
+      </div>
+      <div class="swiper-slide">
+        <section id="section3"> <div>section3</div> </section>
       </div>
     </div>
-    <ul class="thumb">
-      <li><img src="images/image1.png" alt="Mango Dragonfruit" onmouseover="imgSlider('images/image1.png');changeCircleColor('#017143')"></li>
-      <li><img src="images/image2.png" alt="Strawberry Açaí" onmouseover="imgSlider('images/image2.png');changeCircleColor('#eb7495')"></li>
-      <li><img src="images/image3.png" alt="Kiwi Starfruit" onmouseover="imgSlider('images/image3.png');changeCircleColor('#d752b1')"></li>
-    </ul>
-  </section>
-  <section id="section2" class="section2">
-    <div class="swiper-container mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src='./images/image02.png' alt="">
-        </div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </section>
-  <section id="section3">
-    <div>section3</div>
-  </section>
   </div>
 <script>
   
@@ -70,7 +63,7 @@
 <!-- https://www.youtube.com/watch?v=91Q6RvKvd7o -->  
 <!-- https://fossheim.io/writing/posts/css-text-gradient/ -->
 <!-- https://poiemaweb.com/sass-basics -->
-<!-- https://13akstjq.github.io/sass/2020/03/01/sass(scss)-%EC%86%8C%EA%B0%9C-%EC%84%A4%EC%B9%98-%ED%8F%B4%EB%8D%94%EA%B5%AC%EC%A1%B0-%EC%82%AC%EC%9A%A9%EB%B2%95.html -->
+<!-- https://13akstjq.github.io/scss/2019/09/01/Webpack%EC%97%90%EC%84%9C-Sass-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0.html -->
 <!-- https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2 -->
 <!-- https://codesandbox.io/s/247ey -->
 
