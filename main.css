@@ -29,7 +29,7 @@ section {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  padding: 110px 0 0;
+  padding: 110px 50px 0;
   background: #fff;
 }
 
@@ -45,9 +45,8 @@ header .header-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 20px 50px 20px 0;
+  padding: 20px 50px;
 }
 header .header-wrapper .logo {
   position: relative;
@@ -72,7 +71,6 @@ header ul li a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1280px;
   margin: 0 auto;
   position: relative;
   width: 100%;
@@ -164,9 +162,14 @@ header ul li a {
   width: 100%;
   height: 100%;
   background: #017143;
-  clip-path: circle(60% at right 100%);
+  clip-path: circle(58% at right 100%);
   transition: 0.1s;
   z-index: 99;
+}
+
+.section_wrap {
+  display: flex;
+  justify-content: space-between;
 }
 
 /****************************************/
@@ -203,14 +206,17 @@ header ul li a {
   content: "Home";
 }
 .swiper-pagination span:nth-child(2):before {
-  content: "Menu";
+  content: "Kiwi";
 }
 .swiper-pagination span:nth-child(3):before {
-  content: "Contact";
+  content: "Strawberry";
+}
+.swiper-pagination span:nth-child(4):before {
+  content: "Mango";
 }
 
 .swiper-pagination-bullet {
-  width: 65px;
+  width: 90px;
   background: #fff;
   color: #333;
   opacity: 1;
