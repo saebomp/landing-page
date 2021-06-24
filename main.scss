@@ -130,6 +130,7 @@ header {
       font-size: 4em;
       line-height: 1em;
       font-weight: bold;
+      height:2em;
       transition: 0.5s;
       background-color: $main-color;
       background-image: linear-gradient(
@@ -229,6 +230,39 @@ header {
 //   height: 100%;
 //   object-fit: cover;
 // }
+
+.swiper-pagination {
+  position: static;
+  span {
+    &:nth-child(1) {
+      &:before {
+        content:'Home'
+      }
+    }
+    &:nth-child(2) {
+      &:before {
+        content:'Menu';
+      }
+    }
+    &:nth-child(3) {
+      &:before {
+        content:'Contact';
+      }
+    }
+  }
+}
+.swiper-pagination-bullet{
+  width:65px;
+  background:#fff;
+  color:#333;
+  opacity:1;
+}
+.swiper-pagination-bullet-active {
+  background:#fff;
+  height: 8px;
+  border-radius: 0;
+  font-weight: bold;
+}
 
 @media only screen and (max-width: $breakpoint-tablet) {
   .content {

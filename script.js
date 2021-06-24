@@ -17,3 +17,16 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
+
+// var i = 0;
+// var txt = 'REFRESHINGLY RADIANT';
+// var speed = 50;
+
+// function typeWriter() {
+//   if (i < txt.length) {
+//     text.innerHTML += txt.charAt(i);
+//     i++;
+//     setTimeout(typeWriter, speed);
+//   }
+// }
+// typeWriter()
