@@ -1,6 +1,6 @@
 # Landing page
 - It designed fully responsive website
-- 
+- Implemented mousewheel event with Swiperjs
 ## Technologies
 HTML5 / CSS3 / SASS / Responsive Web / NPM
 ## Setup
