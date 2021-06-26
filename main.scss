@@ -154,12 +154,7 @@ header {
         #d752b1 66.666%, 
         #d752b1 83.333%, 
         #A7489B 83.333%);
-      background-size: 100%;
-      background-repeat: repeat;
-      /* Use the text as a mask for the background. */
-      /* This will show the gradient as a text color rather than element bg. */
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; 
+      @include text_gradient;
       span {
         // color:$main-color;
         font-size: 1.2em;
