@@ -30,7 +30,6 @@ section {
   width: 100%;
   min-height: 100vh;
   padding: 110px 50px 0;
-  background: #f2f0eb;
 }
 
 header {
@@ -225,6 +224,36 @@ header ul li a {
 .text_wrap h2 {
   font-size: 48px;
   margin-bottom: 15px;
+}
+.text_wrap h2.textGradient1 {
+  background-color: yellow;
+  background-image: linear-gradient(45deg, #c3cb49, #af4261);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.text_wrap h2.textGradient2 {
+  background-color: orange;
+  background-image: linear-gradient(45deg, #f4ad9a, #db1b12);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.text_wrap h2.textGradient3 {
+  background-color: red;
+  background-image: linear-gradient(45deg, #f18ea0, #471522);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 /****************************************/
