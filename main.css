@@ -180,8 +180,8 @@ header ul li a {
 
 .img_bg {
   overflow: hidden;
-  width: 650px;
-  height: 650px;
+  max-width: 650px;
+  max-height: 650px;
   padding-top: 200px;
   margin: 100px auto;
   display: block;
@@ -192,6 +192,9 @@ header ul li a {
   perspective: 1000px;
   background: 0% 0%/1600% 1600% #1f3933;
   animation: 12s ease-in-out 0s infinite alternate both running mymove;
+}
+.img_bg img {
+  max-width: 100%;
 }
 
 @keyframes mymove {
@@ -329,6 +332,27 @@ header ul li a {
 
   .content .textBox h2 {
     font-size: 40px;
+  }
+
+  .section_wrap {
+    display: block;
+  }
+  .section_wrap .img_wrap {
+    width: 100%;
+  }
+  .section_wrap .img_wrap .img_bg {
+    margin: 20px auto;
+  }
+  .section_wrap .text_wrap {
+    width: 100%;
+  }
+  .section_wrap .text_wrap h2 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .img_bg {
+    max-height: 550px;
   }
 }
 @media only screen and (max-width: 1280px) {

@@ -36,6 +36,7 @@
 /****************************************/
 $breakpoint-widescreen: 1920px;
 $breakpoint-desktop: 1280px;
+$breakpoint-laptop: 1000px;
 $breakpoint-tablet: 780px;
 $main-color:#017143;
 $secondary-color:#1f3933;
@@ -214,8 +215,8 @@ header {
 .img_bg {
   // background-color:$secondary-color;
   overflow: hidden;
-  width:650px;
-  height:650px;
+  max-width:650px;
+  max-height:650px;
   padding-top:200px;
   margin: 100px auto;
 
@@ -229,6 +230,9 @@ header {
   perspective: 1000px;
   background:  0% 0% / 1600% 1600% $secondary-color;
   animation: 12s ease-in-out 0s infinite alternate both running mymove;
+  img {
+    max-width: 100%;
+  }
 }
 @keyframes mymove {
   0%, 100% {
@@ -364,6 +368,27 @@ header {
       h2 {
     font-size: 40px;
   }}}
+  .section_wrap {
+    display: block;
+    .img_wrap {
+      width:100%;
+      .img_bg {
+        margin: 20px auto;
+      }
+    }
+    .text_wrap {
+      width:100%;
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-laptop) { 
+  .img_bg {
+    max-height: 550px;
+  }
 }
 
 @media only screen and (max-width: $breakpoint-desktop) {

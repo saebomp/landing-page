@@ -18,15 +18,18 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-// var i = 0;
-// var txt = 'REFRESHINGLY RADIANT';
-// var speed = 50;
-
-// function typeWriter() {
-//   if (i < txt.length) {
-//     text.innerHTML += txt.charAt(i);
-//     i++;
-//     setTimeout(typeWriter, speed);
+// window.addEventListener('scroll', checkBoxes)
+//   checkBoxes()
+//   function checkBoxes() {
+//     const triggerBottom = window.innerHeight / 5 * 4
+    
+//     text_wrap1.forEach(box => {
+//       const boxTop = box.getBoundingClientRect().top
+//       console.log(boxTop)
+//       if(boxTop < triggerBottom) {
+//         box.classList.add('show')
+//       } else {
+//         box.classList.remove('show')
+//       }
+//     })
 //   }
-// }
-// typeWriter()
