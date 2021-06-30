@@ -168,14 +168,16 @@ header ul li a {
 }
 
 .section_wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  overflow: hidden;
+  min-height: 100%;
 }
-
-.img_wrap {
+.section_wrap .img_wrap1 {
   width: 50%;
   height: 100%;
+  float: left;
+}
+.section_wrap .text_wrap1 {
+  float: right;
 }
 
 .img_bg {

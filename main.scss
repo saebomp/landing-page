@@ -202,15 +202,19 @@ header {
 }
 
 .section_wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  overflow: hidden;
+  min-height: 100%;
+  .img_wrap1 {
+    width:50%;
+    height: 100%;
+    float:left
+  }
+  .text_wrap1 {
+    float:right;
+  }
 }
 
-.img_wrap {
-  width:50%;
-  height: 100%;
-}
+
 
 .img_bg {
   // background-color:$secondary-color;
