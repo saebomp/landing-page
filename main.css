@@ -31,6 +31,9 @@ section {
   min-height: 100vh;
   padding: 110px 50px 0;
 }
+section.bg {
+  background: #f2f0eb;
+}
 
 header {
   position: fixed;
@@ -168,16 +171,14 @@ header ul li a {
 }
 
 .section_wrap {
-  overflow: hidden;
-  min-height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.section_wrap .img_wrap1 {
+
+.img_wrap {
   width: 50%;
   height: 100%;
-  float: left;
-}
-.section_wrap .text_wrap1 {
-  float: right;
 }
 
 .img_bg {
@@ -229,6 +230,7 @@ header ul li a {
 .text_wrap h2 {
   font-size: 48px;
   margin-bottom: 15px;
+  line-height: 1.2;
 }
 .text_wrap h2.textGradient1 {
   background-color: yellow;
@@ -345,11 +347,20 @@ header ul li a {
   .section_wrap .img_wrap .img_bg {
     margin: 20px auto;
   }
+  .section_wrap .img_wrap .img_bg img {
+    max-width: 70%;
+  }
   .section_wrap .text_wrap {
     width: 100%;
   }
   .section_wrap .text_wrap h2 {
     text-align: center;
+    font-size: 40px;
+  }
+
+  .section_wrap2 {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -364,6 +375,21 @@ header ul li a {
 
   .content .textBox {
     padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .img_bg {
+    max-height: 450px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  section {
+    padding: 110px 20px;
+  }
+
+  .img_bg {
+    max-height: 350px;
+    padding-top: 150px;
   }
 }
 
