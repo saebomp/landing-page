@@ -1,3 +1,6 @@
+/******************************************************/
+/************************swiper***********************/
+/*****************************************************/
 function imgSlider(add) {
   document.querySelector('.starbucks').src = add;
 }
@@ -18,18 +21,12 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-// window.addEventListener('scroll', checkBoxes)
-//   checkBoxes()
-//   function checkBoxes() {
-//     const triggerBottom = window.innerHeight / 5 * 4
-    
-//     text_wrap1.forEach(box => {
-//       const boxTop = box.getBoundingClientRect().top
-//       console.log(boxTop)
-//       if(boxTop < triggerBottom) {
-//         box.classList.add('show')
-//       } else {
-//         box.classList.remove('show')
-//       }
-//     })
-//   }
+/******************************************************/
+/**********************navigation*********************/
+/*****************************************************/
+const toggleMenu = () => {
+  const menuToggle = document.querySelector('.toggle')
+  const navigation = document.querySelector('.swiper-pagination')
+  menuToggle.classList.toggle('active')
+  navigation.classList.toggle('mobile-menu')
+}

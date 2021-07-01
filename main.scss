@@ -355,32 +355,95 @@ header {
   font-weight: bold;
 }
 
+/****************************************/
+/************mobile navigation***********/
+/****************************************/
+
+
+
 @media only screen and (max-width: $breakpoint-tablet) {
+  header {
+    .swiper-pagination {
+      display: none;
+      span {
+        width: 100%;
+        font-size: 40px;
+        line-height: 2;
+        color:#fff;
+        font-weight: 100;
+      }
+      .swiper-pagination-bullet {
+        background:$main-color;
+      }
+      .swiper-pagination-bullet-active { 
+        font-weight: bold;
+      }
+    }
+    .mobile-menu {
+      display: inline-block;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10000;
+      padding: 0;
+      text-align: center;
+      li {
+          padding-bottom: 10px;
+      }
+  }
+  .toggle {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      display: block;
+      cursor: pointer;
+      z-index: 10;
+      &:before {
+          content: '\f0c9';
+          color: #000;
+          font-weight: 900;
+          font-size: 24px;
+          font-family: 'Font Awesome 5 Free';
+      }
+
+  }
+  .active {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      width: 100%;
+      height: 100%;
+      background-color: $main-color;
+      &:before {
+          position: fixed;
+          top: 52px; 
+          right: 48px;
+          content: '\f057';
+      }
+  }
+  }
   .content {
     align-items: flex-start;
     padding-top:200px;
-  }
-  .content {
     .imgBox {
       display: none;
     }
-  }
-  .content {
     .textBox {
-    max-width: 100%;
+      max-width: 100%;
+      h2 {
+      font-size: 40px;
+      }
     }
   }
-  .content {
-    .textBox {
-      h2 {
-    font-size: 40px;
-  }}}
   .section_wrap {
     display: block;
     .img_wrap {
       width:100%;
       .img_bg {
         margin: 20px auto;
+        max-height: 450px;
         img {
           max-width: 70%;
         }
@@ -398,7 +461,9 @@ header {
     display: flex;
     flex-direction: column-reverse;
   }
+  
 }
+
 
 @media only screen and (max-width: $breakpoint-laptop) { 
   .img_bg {
@@ -414,14 +479,8 @@ header {
   }
   .content {
     .textBox {
-      padding:0 20px;
+      padding:0 10px;
     }
-  }
-}
-
-@media only screen and (max-width: $breakpoint-tablet) { 
-  .img_bg {
-    max-height: 450px;
   }
 }
 
