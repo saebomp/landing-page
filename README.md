@@ -1,12 +1,14 @@
 # Landing page
+- A landing page to promote the Starbucks new menu
 - It designed fully responsive website
 - Implemented mousewheel event with Swiperjs
+- Used CSS3 animations
 ## Technologies
-HTML5 / CSS3 / SASS / Responsive Web / NPM
+HTML5 / JavaScript / SASS / Responsive Web / NPM
 ## Setup
 https://saebomp.github.io/landing-page/
 ## Status
-Project is in progress
+Project is finished
 ## Inspiration
 https://www.youtube.com/watch?v=91Q6RvKvd7o <br />
 https://fossheim.io/writing/posts/css-text-gradient/<br />
