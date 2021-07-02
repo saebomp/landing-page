@@ -409,7 +409,7 @@ header ul li a {
     width: 100%;
   }
   .section_wrap .img_wrap .img_bg {
-    margin: 20px auto;
+    margin: 100px auto 20px;
     max-height: 450px;
   }
   .section_wrap .img_wrap .img_bg img {
