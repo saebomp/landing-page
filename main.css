@@ -327,16 +327,19 @@ header ul li a {
 @media only screen and (max-width: 780px) {
   header .swiper-pagination {
     display: none;
+    width: 100%;
   }
   header .swiper-pagination span {
     width: 100%;
     font-size: 40px;
-    line-height: 2;
     color: #fff;
     font-weight: 100;
+    margin: 10px 0;
   }
   header .swiper-pagination .swiper-pagination-bullet {
     background: #017143;
+    height: 100%;
+    display: block;
   }
   header .swiper-pagination .swiper-pagination-bullet-active {
     font-weight: bold;

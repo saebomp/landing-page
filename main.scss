@@ -365,15 +365,18 @@ header {
   header {
     .swiper-pagination {
       display: none;
+      width: 100%;
       span {
         width: 100%;
         font-size: 40px;
-        line-height: 2;
         color:#fff;
         font-weight: 100;
+        margin:10px 0;
       }
       .swiper-pagination-bullet {
         background:$main-color;
+        height: 100%;
+        display: block; 
       }
       .swiper-pagination-bullet-active { 
         font-weight: bold;

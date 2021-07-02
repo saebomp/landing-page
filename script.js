@@ -24,9 +24,17 @@ var swiper = new Swiper(".mySwiper", {
 /******************************************************/
 /**********************navigation*********************/
 /*****************************************************/
+let menuToggle = document.querySelector('.toggle')
+let navigation = document.querySelector('.swiper-pagination')
 const toggleMenu = () => {
-  const menuToggle = document.querySelector('.toggle')
-  const navigation = document.querySelector('.swiper-pagination')
   menuToggle.classList.toggle('active')
   navigation.classList.toggle('mobile-menu')
 }
+
+const activeMenus = document.querySelectorAll('.swiper-pagination-bullet')
+activeMenus.forEach(activeMenu => {
+  activeMenu.addEventListener('click', ()=> {
+    menuToggle.classList.remove('active')
+    navigation.classList.remove('mobile-menu')
+  })
+})
