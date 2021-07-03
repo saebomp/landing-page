@@ -26,16 +26,6 @@ html {
   height: 100%;
 }
 
-section {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  padding: 110px 50px 0;
-}
-section.bg {
-  background: #f2f0eb;
-}
-
 header {
   position: fixed;
   z-index: 999;
@@ -56,19 +46,103 @@ header .header-wrapper .logo {
   position: relative;
 }
 
-header ul {
+section {
   position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 110px 50px 0;
+}
+section.bg {
+  background: #f2f0eb;
+}
+section .section_wrap {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-header ul li {
-  list-style: none;
+section .section_wrap .img_wrap {
+  width: 50%;
+  height: 100%;
 }
-header ul li a {
-  display: inline-block;
-  color: #333;
-  font-weight: 400;
-  margin-left: 40px;
-  text-decoration: none;
+section .section_wrap .img_wrap .img_bg {
+  overflow: hidden;
+  max-width: 650px;
+  max-height: 650px;
+  padding-top: 200px;
+  margin: 100px auto;
+  display: block;
+  min-height: 200px;
+  min-width: 200px;
+  transform-origin: 50% 50%;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  background: 0% 0%/1600% 1600% #1f3933;
+  animation: 10s ease-in-out 0s infinite alternate both running mymove;
+}
+section .section_wrap .img_wrap .img_bg img {
+  max-width: 100%;
+}
+section .section_wrap .text_wrap {
+  text-align: left;
+  width: 45%;
+}
+section .section_wrap .text_wrap h2 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+section .section_wrap .text_wrap h2.textGradient1 {
+  background-color: yellow;
+  background-image: linear-gradient(45deg, #c3cb49, #af4261);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+section .section_wrap .text_wrap h2.textGradient2 {
+  background-color: orange;
+  background-image: linear-gradient(45deg, #f4ad9a, #db1b12);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+section .section_wrap .text_wrap h2.textGradient3 {
+  background-color: red;
+  background-image: linear-gradient(45deg, #f18ea0, #471522);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+@keyframes mymove {
+  0%, 100% {
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+  }
 }
 
 .content {
@@ -169,99 +243,6 @@ header ul li a {
   clip-path: circle(58% at right 105%);
   transition: 0.1s;
   z-index: 99;
-}
-
-.section_wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.img_wrap {
-  width: 50%;
-  height: 100%;
-}
-
-.img_bg {
-  overflow: hidden;
-  max-width: 650px;
-  max-height: 650px;
-  padding-top: 200px;
-  margin: 100px auto;
-  display: block;
-  min-height: 200px;
-  min-width: 200px;
-  transform-origin: 50% 50%;
-  transform-style: preserve-3d;
-  perspective: 1000px;
-  background: 0% 0%/1600% 1600% #1f3933;
-  animation: 12s ease-in-out 0s infinite alternate both running mymove;
-}
-.img_bg img {
-  max-width: 100%;
-}
-
-@keyframes mymove {
-  0%, 100% {
-    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
-  }
-  14% {
-    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
-  }
-  28% {
-    border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
-  }
-  42% {
-    border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
-  }
-  56% {
-    border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
-  }
-  70% {
-    border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
-  }
-  84% {
-    border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
-  }
-}
-.text_wrap {
-  text-align: left;
-  width: 45%;
-}
-.text_wrap h2 {
-  font-size: 48px;
-  margin-bottom: 15px;
-  line-height: 1.2;
-}
-.text_wrap h2.textGradient1 {
-  background-color: yellow;
-  background-image: linear-gradient(45deg, #c3cb49, #af4261);
-  background-size: 100%;
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-}
-.text_wrap h2.textGradient2 {
-  background-color: orange;
-  background-image: linear-gradient(45deg, #f4ad9a, #db1b12);
-  background-size: 100%;
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-}
-.text_wrap h2.textGradient3 {
-  background-color: red;
-  background-image: linear-gradient(45deg, #f18ea0, #471522);
-  background-size: 100%;
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
 }
 
 /****************************************/
@@ -388,42 +369,40 @@ header ul li a {
     content: "";
   }
 
-  .content {
+  section .content {
     align-items: flex-start;
     padding-top: 200px;
   }
-  .content .imgBox {
+  section .content .imgBox {
     display: none;
   }
-  .content .textBox {
+  section .content .textBox {
     max-width: 100%;
   }
-  .content .textBox h2 {
+  section .content .textBox h2 {
     font-size: 40px;
   }
-
-  .section_wrap {
+  section .section_wrap {
     display: block;
   }
-  .section_wrap .img_wrap {
+  section .section_wrap .img_wrap {
     width: 100%;
   }
-  .section_wrap .img_wrap .img_bg {
+  section .section_wrap .img_wrap .img_bg {
     margin: 100px auto 20px;
     max-height: 450px;
   }
-  .section_wrap .img_wrap .img_bg img {
+  section .section_wrap .img_wrap .img_bg img {
     max-width: 70%;
   }
-  .section_wrap .text_wrap {
+  section .section_wrap .text_wrap {
     width: 100%;
   }
-  .section_wrap .text_wrap h2 {
+  section .section_wrap .text_wrap h2 {
     text-align: center;
     font-size: 40px;
   }
-
-  .section_wrap2 {
+  section .section_wrap2 {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -446,8 +425,7 @@ header ul li a {
   section {
     padding: 110px 20px;
   }
-
-  .img_bg {
+  section .section_wrap .img_wrap .img_bg {
     max-height: 350px;
     padding-top: 150px;
   }

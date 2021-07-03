@@ -1,3 +1,15 @@
+
+const nav = document.querySelector('.header')
+window.addEventListener('scroll', fixNav)
+function fixNav() {
+  console.log("ddd")
+  if(window.scrollY > nav.offsetHeight + 10) {
+    nav.classList.add('scrollEvent')
+  } else {
+    nav.classList.remove('scrollEvent')
+  }
+}
+
 /******************************************************/
 /************************swiper***********************/
 /*****************************************************/
