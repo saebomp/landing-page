@@ -401,7 +401,7 @@ section .section_wrap .text_wrap h2.textGradient3 {
   }
   section .section_wrap .text_wrap h2 {
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
   }
   section .section_wrap2 {
     display: flex;
@@ -423,6 +423,11 @@ section .section_wrap .text_wrap h2.textGradient3 {
   }
 }
 @media only screen and (max-width: 420px) {
+  header .header-wrapper .logo svg {
+    width: 40px;
+    height: 40px;
+  }
+
   section {
     padding: 0px 20px;
   }
