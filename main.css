@@ -390,7 +390,7 @@ section .section_wrap .text_wrap h2.textGradient3 {
     width: 100%;
   }
   section .section_wrap .img_wrap .img_bg {
-    margin: 100px auto 20px;
+    margin: 80px auto 20px;
     max-height: 450px;
   }
   section .section_wrap .img_wrap .img_bg img {
@@ -432,7 +432,7 @@ section .section_wrap .text_wrap h2.textGradient3 {
     padding: 0px 20px;
   }
   section .section_wrap .img_wrap .img_bg {
-    max-height: 300px;
+    max-height: 280px;
     padding-top: 150px;
   }
 }
