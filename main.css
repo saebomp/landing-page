@@ -241,6 +241,7 @@ section .section_wrap .text_wrap h2.textGradient3 {
   height: 100%;
   background: #017143;
   clip-path: circle(58% at right 105%);
+  -webkit-clip-path: circle(58% at right 105%);
   transition: 0.1s;
   z-index: 99;
 }
@@ -371,7 +372,7 @@ section .section_wrap .text_wrap h2.textGradient3 {
 
   section .content {
     align-items: flex-start;
-    padding-top: 200px;
+    padding-top: 100px;
   }
   section .content .imgBox {
     display: none;

@@ -16,6 +16,7 @@
 @mixin media_circle {
   @media only screen and (min-width: $breakpoint-widescreen) {
     clip-path: circle(1300px at right 1500px);
+    -webkit-clip-path: circle(1300px at right 1500px);
   }
 }
 @mixin media_fontsize {
@@ -263,6 +264,7 @@ section {
   height: 100%;
   background: $main-color;
   clip-path:circle(58% at right 105%);
+  -webkit-clip-path: circle(58% at right 105%);
   transition: 0.1s;
   z-index: 99;
 }
@@ -410,7 +412,7 @@ section {
 section {
   .content {
     align-items: flex-start;
-    padding-top:200px;
+    padding-top:100px;
     .imgBox {
       display: none;
     }
