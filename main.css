@@ -372,7 +372,7 @@ section .section_wrap .text_wrap h2.textGradient3 {
 
   section .content {
     align-items: flex-start;
-    padding-top: 100px;
+    padding-top: 150px;
   }
   section .content .imgBox {
     display: none;
@@ -415,7 +415,7 @@ section .section_wrap .text_wrap h2.textGradient3 {
 }
 @media only screen and (max-width: 1280px) {
   header .header-wrapper {
-    padding: 20px;
+    padding: 10px 20px;
   }
 
   .content .textBox {
@@ -424,10 +424,10 @@ section .section_wrap .text_wrap h2.textGradient3 {
 }
 @media only screen and (max-width: 420px) {
   section {
-    padding: 110px 20px;
+    padding: 0px 20px;
   }
   section .section_wrap .img_wrap .img_bg {
-    max-height: 350px;
+    max-height: 300px;
     padding-top: 150px;
   }
 }

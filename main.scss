@@ -412,7 +412,7 @@ section {
 section {
   .content {
     align-items: flex-start;
-    padding-top:100px;
+    padding-top:150px;
     .imgBox {
       display: none;
     }
@@ -460,7 +460,7 @@ section {
 @media only screen and (max-width: $breakpoint-desktop) {
   header {
     .header-wrapper {
-      padding:20px;
+      padding:10px 20px;
     }
   }
   .content {
@@ -472,11 +472,11 @@ section {
 
 @media only screen and (max-width: $breakpoint-mobile) { 
   section {
-    padding:110px 20px;
+    padding:0px 20px;
     .section_wrap {
       .img_wrap {
         .img_bg {
-          max-height: 350px;
+          max-height: 300px;
           padding-top:150px;
         }
       }
