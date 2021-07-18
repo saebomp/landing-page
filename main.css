@@ -145,6 +145,49 @@ section .section_wrap .text_wrap h2.textGradient3 {
   }
 }
 
+.btn {
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 40px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  text-decoration: none;
+  margin-top: 20px;
+  border: 2px solid #017143;
+  color: #017143;
+}
+.btn:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 0px;
+  z-index: -2;
+}
+.btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #017143;
+  transition: all 0.3s;
+  border-radius: 0px;
+  z-index: -1;
+}
+.btn:hover {
+  color: #fff;
+}
+.btn:hover:before {
+  width: 100%;
+}
+
 .content {
   display: flex;
   justify-content: space-between;
@@ -169,17 +212,6 @@ section .section_wrap .text_wrap h2.textGradient3 {
   max-width: 600px;
   padding-bottom: 50px;
   text-align: left;
-}
-.content .textBox a {
-  padding: 15px 25px;
-  text-align: center;
-  color: #fff;
-  margin-top: 20px;
-  display: inline-block;
-  background: #017143;
-  text-decoration: none;
-  font-weight: 500;
-  border-radius: 40px;
 }
 .content .textBox p {
   color: #333;
