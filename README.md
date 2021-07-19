@@ -17,3 +17,5 @@ https://13akstjq.github.io/sass/2020/03/01/sass(scss)-%EC%86%8C%EA%B0%9C-%EC%84%
 https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2 <br />
 https://codesandbox.io/s/247ey<br />
 https://github.com/juliangarnier/anime
+https://dev.to/webdeasy/top-20-css-buttons-animations-f41 
+https://www.w3schools.com/howto/howto_css_modals.asp
