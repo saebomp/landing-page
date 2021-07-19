@@ -26,6 +26,86 @@ html {
   height: 100%;
 }
 
+/*modal*/
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 9999;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+.modal .modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 830px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+.modal .modal-content .modal-body {
+  position: relative;
+}
+.modal .modal-content .modal-body img {
+  width: 100%;
+}
+.modal .modal-content .modal-body .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #000;
+  font-size: 28px;
+  font-weight: bold;
+}
+.modal .modal-content .modal-body .close:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal .modal-content .modal-body .close:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -500px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes animatetop {
+  from {
+    top: -500px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
 header {
   position: fixed;
   z-index: 999;
@@ -145,49 +225,6 @@ section .section_wrap .text_wrap h2.textGradient3 {
   }
 }
 
-.btn {
-  display: inline-block;
-  padding: 15px 25px;
-  border-radius: 40px;
-  transition: all 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  text-decoration: none;
-  margin-top: 20px;
-  border: 2px solid #017143;
-  color: #017143;
-}
-.btn:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  border-radius: 0px;
-  z-index: -2;
-}
-.btn:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
-  background-color: #017143;
-  transition: all 0.3s;
-  border-radius: 0px;
-  z-index: -1;
-}
-.btn:hover {
-  color: #fff;
-}
-.btn:hover:before {
-  width: 100%;
-}
-
 .content {
   display: flex;
   justify-content: space-between;
@@ -212,6 +249,48 @@ section .section_wrap .text_wrap h2.textGradient3 {
   max-width: 600px;
   padding-bottom: 50px;
   text-align: left;
+}
+.content .textBox .btn {
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 40px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  text-decoration: none;
+  margin-top: 20px;
+  border: 2px solid #017143;
+  color: #017143;
+}
+.content .textBox .btn:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 0px;
+  z-index: -2;
+}
+.content .textBox .btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #017143;
+  transition: all 0.3s;
+  border-radius: 0px;
+  z-index: -1;
+}
+.content .textBox .btn:hover {
+  color: #fff;
+}
+.content .textBox .btn:hover:before {
+  width: 100%;
 }
 .content .textBox p {
   color: #333;
