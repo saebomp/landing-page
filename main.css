@@ -51,12 +51,10 @@ html {
 }
 .modal .modal-content {
   position: relative;
-  background-color: #fefefe;
   margin: auto;
   padding: 0;
-  border: 1px solid #888;
-  width: 830px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: 830px;
+  width: 100%;
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
@@ -64,9 +62,26 @@ html {
 }
 .modal .modal-content .modal-body {
   position: relative;
+  margin: 0 25px;
+  color: #1e3932;
 }
 .modal .modal-content .modal-body img {
   width: 100%;
+}
+.modal .modal-content .modal-body .modal-text {
+  position: absolute;
+  padding: 25px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.modal .modal-content .modal-body .modal-text span {
+  font-size: 30px;
+  display: block;
+  margin-bottom: 20px;
+  font-weight: bold;
+  line-height: 1;
 }
 .modal .modal-content .modal-body .close {
   position: absolute;
