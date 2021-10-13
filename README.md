@@ -1,6 +1,6 @@
 # Starbucks Landing Page
 - A landing page to promote the Starbucks new menu
-- It designed fully responsive website
+- Fully responsive website
 - Implemented mousewheel event with Swiperjs
 - Used CSS3 animations
 ## Technologies
