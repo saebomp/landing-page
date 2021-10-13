@@ -401,6 +401,8 @@ section .section_wrap .text_wrap h2.textGradient3 {
 
 .swiper-pagination {
   position: static;
+  display: flex;
+  flex-direction: row;
 }
 .swiper-pagination span:nth-child(1):before {
   content: "Home";
@@ -457,7 +459,7 @@ section .section_wrap .text_wrap h2.textGradient3 {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) !important;
     z-index: 10000;
     padding: 0;
     text-align: center;
